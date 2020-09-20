@@ -140,3 +140,12 @@ Redirected to http://192.241.157.192:41879/posts/4
 Completed 302 Found in 84ms (ActiveRecord: 80.3ms)
 
 
+Started GET "/posts/4" for 73.173.27.73 at 2020-09-20 18:15:13 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 0.3ms)
+
+
